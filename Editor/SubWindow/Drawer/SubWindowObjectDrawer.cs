@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEditor;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal class SubWindowObjectDrawer : SubWindowDrawerBase
 	{

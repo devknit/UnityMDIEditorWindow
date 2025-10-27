@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[AttributeUsage( AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
 	public class MsgBoxAttribute : Attribute

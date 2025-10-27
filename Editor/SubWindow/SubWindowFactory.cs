@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal class SubWindowFactory
 	{

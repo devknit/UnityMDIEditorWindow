@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public delegate void DrawActionUseObj( Rect rect, object obj);
 	

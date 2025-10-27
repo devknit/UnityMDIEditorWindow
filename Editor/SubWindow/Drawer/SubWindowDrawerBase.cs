@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal abstract class SubWindowDrawerBase : ComponentDrawerBase
 	{

@@ -1,5 +1,5 @@
 ﻿
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal abstract class ComponentDrawerBase
 	{

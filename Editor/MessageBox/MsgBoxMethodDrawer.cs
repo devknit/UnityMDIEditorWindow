@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using System.Reflection;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal class MsgBoxMethodDrawer : MsgBoxDrawer
 	{

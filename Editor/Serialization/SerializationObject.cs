@@ -3,7 +3,7 @@ using UnityEngine;
 using System;
 using System.Reflection;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[Serializable]
 	internal class SerializationObject

@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[AttributeUsage( AttributeTargets.Class, AllowMultiple = true, Inherited = false)]
 	public class SubWindowHandleAttribute : Attribute

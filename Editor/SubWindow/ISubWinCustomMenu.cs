@@ -1,7 +1,7 @@
 ﻿
 using UnityEditor;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public interface ISubWinCustomMenu
 	{

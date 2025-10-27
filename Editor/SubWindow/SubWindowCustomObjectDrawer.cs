@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[Serializable]
 	public abstract class SubWindowCustomDrawer : ComponentCustomDrawerBase

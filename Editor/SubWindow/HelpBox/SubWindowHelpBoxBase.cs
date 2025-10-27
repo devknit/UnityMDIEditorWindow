@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public enum SubWindowHelpBoxType
 	{

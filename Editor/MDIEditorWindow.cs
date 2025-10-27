@@ -3,13 +3,14 @@ using System;
 using UnityEngine;
 using UnityEditor;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
-	public class MDIEditorWindow : EditorWindow, IMessageDispatcher
+	public class MDIEditorWindow : UnityEditor.EditorWindow, IMessageDispatcher
 	{
-		public static T CreateWindow<T>( object handle) where T : MDIEditorWindow
+		public static T CreateWindow<T>( object handle, string title) where T : MDIEditorWindow
 		{
 			T window = GetWindow<T>();
+			title ??= typeof( T).Name;
 			
 			if( handle != null)
 			{
@@ -21,10 +22,11 @@ namespace Knit.Editor
 			}
 			window.Clear();
 			window.Init();
+			window.titleContent = new GUIContent( title);
 			window.m_IsInitialized = true;
 			return window;
 		}
-		public static T CreateWindow<T>( Type type, params object[] args) where T : MDIEditorWindow
+		public static T CreateWindow<T>( Type type, string title, params object[] args) where T : MDIEditorWindow
 		{
 			object obj = null;
 			
@@ -32,19 +34,20 @@ namespace Knit.Editor
 			{
 				obj = System.Activator.CreateInstance( type, args);
 			}
-			return CreateWindow<T>( obj);
+			return CreateWindow<T>( obj, title);
 		}
-		public static T CreateNewWindow<T>( object handle) where T : MDIEditorWindow
+		public static T CreateNewWindow<T>( object handle, string title) where T : MDIEditorWindow
 		{
 		#if UNITY_2019_2_OR_NEWER
 			T window = CreateWindow<T>();
 		#else
 			T window = CreateInstance<T>();
-		#endif	
+		#endif
+			title ??= typeof( T).Name;
+			
 			if( handle != null)
 			{
 				window.m_Handle = SerializationObject.CreateInstance( handle);
-				window.titleContent = new GUIContent( typeof( T).Name);
 			}
 			else
 			{
@@ -52,6 +55,7 @@ namespace Knit.Editor
 			}
 			window.Clear();
 			window.Init();
+			window.titleContent = new GUIContent( title);
 			window.m_IsInitialized = true;
 			return window;
 		}

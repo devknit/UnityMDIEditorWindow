@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[Serializable]
 	public abstract class ComponentCustomDrawerBase : IMessageDispatcher

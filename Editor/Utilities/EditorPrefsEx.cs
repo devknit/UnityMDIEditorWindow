@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal static class EditorPrefsEx
 	{

@@ -5,11 +5,11 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public delegate bool ConditionDelegate( object arg);
 }
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal class ToolBarTreeNode
 	{

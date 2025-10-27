@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public enum SubWindowIcon
 	{

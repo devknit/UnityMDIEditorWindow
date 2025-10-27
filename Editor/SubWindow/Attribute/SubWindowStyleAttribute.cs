@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public enum SubWindowStyle
 	{
@@ -10,7 +10,7 @@ namespace Knit.Editor
 		Grid,
 	}
 }
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[AttributeUsage( AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
 	public class SubWindowStyleAttribute : Attribute

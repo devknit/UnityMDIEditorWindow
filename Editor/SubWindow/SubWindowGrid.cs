@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Reflection;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[SubWindowStyle( SubWindowStyle.Grid)]
 	public class SubWindowGrid : SubWindow

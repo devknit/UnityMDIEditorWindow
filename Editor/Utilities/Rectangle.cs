@@ -2,7 +2,7 @@
 using UnityEngine;
 using System;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	[Serializable]
 	public struct Rectangle

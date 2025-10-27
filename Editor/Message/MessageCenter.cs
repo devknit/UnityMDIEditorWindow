@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal delegate void MessageHandle();
 	internal delegate void MessageHandle<T>( T arg);

@@ -5,7 +5,7 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal class SubWindowTree : ComponentBase
 	{

@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Xml;
 using System.Collections.Generic;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal class SubWindowNode
 	{

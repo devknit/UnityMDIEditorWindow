@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	internal abstract class MsgBoxDrawer : ComponentDrawerBase
 	{

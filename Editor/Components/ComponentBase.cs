@@ -2,7 +2,7 @@
 using System;
 using System.Reflection;
 
-namespace Knit.Editor
+namespace Knit.EditorWindow
 {
 	public abstract class ComponentBase
 	{
